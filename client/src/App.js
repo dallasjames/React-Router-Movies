@@ -14,10 +14,8 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <Link exact="true" to='/'>All</Link>
-      <Link exact="true" to='movies'></Link>
-      <Route path='/' component={MovieList}></Route>
-      <Route path='movies/:id' component={Movie.id}></Route>
+      <Route exact path='/' component={MovieList}></Route>
+      <Route path='movies/:id' component={Movie}></Route>
     </div>
   );
 };
